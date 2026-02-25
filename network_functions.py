@@ -11,7 +11,8 @@ def get_local_ip():
         s.close()
         return local_ip
     except Exception:
-        return "127.0.0.1"
+        print("Unable to determine local IP address. Please check your network connection.")
+        return None
 
 
 # Function to get the subnet mask of the local network
